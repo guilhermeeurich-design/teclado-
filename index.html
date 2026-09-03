@@ -57,4 +57,130 @@
     }
 
     .stat-item {
-      text-
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+    }
+
+    .text-display {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      background-color: #0f172a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      user-select: none;
+      word-wrap: break-word;
+    }
+
+    .letter {
+      position: relative;
+    }
+
+    .correct {
+      color: #4ade80;
+    }
+
+    .incorrect {
+      color: #f87171;
+      background-color: rgba(248, 113, 113, 0.2);
+      border-radius: 2px;
+    }
+
+    .current {
+      border-bottom: 3px solid #38bdf8;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+      background-color: #0f172a;
+      border: 2px solid #334155;
+      border-radius: 8px;
+      color: #f8fafc;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .input-field:focus {
+      border-color: #38bdf8;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      background-color: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #0284c7;
+      color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ritmo de Digitação</h1>
+    <p>Teste sua velocidade e precisão em tempo real</p>
+  </header>
+
+  <main class="container">
+    <section class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-value" id="timer">60</div>
+        <div class="stat-label">Tempo (s)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="wpm">0</div>
+        <div class="stat-label">WPM</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="accuracy">100%</div>
+        <div class="stat-label">Precisão</div>
+      </div>
+    </section>
+
+    <div class="text-display" id="textDisplay"></div>
+
+    <input 
+      type="text" 
+      class="input-field" 
+      id="inputField" 
+      placeholder="Comece a digitar aqui para iniciar o teste..."
+      autocomplete="off"
+    >
+
+    <div class="controls">
+      <button class="btn" id="restartBtn">Reiniciar Teste</button>
+    </div>
+  </main>
+
+  <script>
+    // Estrutura pronta para receber a lógica JavaScript do teste
+  </script>
+</body>
+</html>
